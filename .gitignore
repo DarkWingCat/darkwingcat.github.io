@@ -6,6 +6,16 @@ bin-release/
 
 # Other files and folders
 .settings/
+.js/
+/bootstrap/*
+!/bootstrap/dist/
+!/bootstrap/dist/**
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+*.pages
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
