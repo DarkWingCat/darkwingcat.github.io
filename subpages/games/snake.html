@@ -3,12 +3,19 @@
 <head>
 <title>DWC Snake</title>
 <meta charset="UTF-8">
+	
+<script>
+if (location.hostname.includes("github.io")) {
+  document.write('<base href="/DWC/">');
+} else {
+  document.write('<base href="/">');
+}
+</script>
+	
 <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
 <script type="module" src="/main.js" defer></script>
-	
 <link rel="stylesheet" href="/bootstrap/scss/bootstrap.css">
 <link rel="stylesheet" href="/styles.css">
-	
 <link rel="icon" type="image/x-icon" href="/assets/img/logo/darkLogoLarge.png">
 </head>
 

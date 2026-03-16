@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>
+<base href="DWC">
 <title>DWC Home</title>
 <meta charset="UTF-8">
+	
+<script>
+if (location.hostname.includes("github.io")) {
+  document.write('<base href="/DWC/">');
+} else {
+  document.write('<base href="/">');
+}
+</script>
+	
 <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
 <script type="module" src="/main.js" defer></script>
 	
