@@ -1,0 +1,22 @@
+@import "../../../bootstrap/scss/bootstrap";
+
+:host
+{
+	display: block;
+}
+
+.container
+{
+	margin-bottom: 16px;
+	width: 100%;
+}
+
+.mobile-only
+{
+	display: none;
+	
+	@include media-breakpoint-down(sm)
+	{
+		display: block;
+	}
+}

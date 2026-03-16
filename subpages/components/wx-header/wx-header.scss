@@ -1,0 +1,27 @@
+@import "../../../bootstrap/scss/bootstrap";
+
+.top-bar
+{
+	/*Container*/
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+	/*font*/
+	color: white;
+	font-size: xxx-large;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	
+	@include media-breakpoint-down(sm)
+	{
+		flex-direction: column-reverse;
+		height: unset;
+	}
+}
+
+.logo
+{
+	height: 80px;
+}

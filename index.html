@@ -1,225 +1,53 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>DarkWingCat</title>
-    <link rel="icon" type="image/x-icon" href="darkLogoLarge.png">
+<title>DWC Home</title>
+<meta charset="UTF-8">
+<script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+<script type="module" src="/main.js" defer></script>
+	
+<link rel="stylesheet" href="/bootstrap/scss/bootstrap.css">
+<link rel="stylesheet" href="/styles.css">
+
+<link rel="icon" type="image/x-icon" href="/assets/img/logo/darkLogoLarge.png">
 </head>
 
 <body>
-    <button id="return" onclick="changeStyleIn()">←</button>
-    <button id="forward" onclick="changeStyleOut()">→</button>
-    <h1 id="title">
-        the DWC bin
-        <img id="logoHead" src="darkLogo transparent.png" alt="DWC Logo">
-    </h1>
-
-    <hr>
-    <div class="main">
-
-        <div class="navbox">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="snake.html">Snake</a></li>
-                    <li><a href="brick.html">Brick</a></li>
-                </ul>
-            </nav>
+<wx-header></wx-header>
+<wx-nav></wx-nav>
+<div class="container">
+  <div class="text-area">
+    <p> Hello my friend. That is who I assume you are anyway. I don't know how you'd end up here if you're not. You can look at my stuff, but I doubt you will have much interest in what I do. Which begs the question: What do I do anyway? What is it that I post here?</p>
+    <p>I have a strange fascination for Flash content. I played flash games back in the day, but had little ability to make my own. While taking computer science in school and studying it in university would bring many horrors, it did teach me how to program, allowing me to make various games, not out of passion (well maybe a bit of passion ʕ•ᴥ•ʔ), but out of  boredom.</p>
+    <p>You can play some of&nbsp; these games on this website. I have a few more coming up.&nbsp; &nbsp;</p>
+  </div>
+</div>
+<div class="wx-card-container">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;"> <img src="assets/img/game-preview/snake800.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">My first project! Retro graphics with neon style and eerie atmosphere. Keyboard only.</p>
+            <a href="subpages/games/snake.html" class="btn btn-success">Gulp!</a> </div>
         </div>
-        <div id="content">
-            <p>
-                Welcome to my little webpage. I will post various projects here, most of which are related to Flash and
-                AIR. The content you will see here is ever growing and includes games, tutorials and more. Currently you
-                can checkout Flash versions of the games Snake and Brick, programmed by me using ActionScript 3,
-                FlashDevelop and Ruffle. If you’re interested in how Flash technology can be used in this day and age,
-                you’ve come to the right place!
-            </p>
-
-            <h2>Why make such a thing?</h2>
-            <p>
-                At first glance it might seem odd to make a page dedicated about a technology that’s essentially dead.
-                Though
-                this exact thought is what pushed me to make it: Is it really dead? You’d be surprised to know that
-                Flash
-                and
-                ActionScript never really died. For it is Flash Player that was discontinued.
-            </p>
-            <p>
-                Though less common, there is an entirely separate runtime for ActionScript and Flash content named Adobe
-                AIR.
-                Unlike Flash Player, it is still actively maintained and gets regular updates. The only difference is
-                that
-                it’s
-                a desktop environment, unlike Flash Player which runs in the browser. Still though, it means you have an
-                entirely separate, and very much viable, method of distribution, which peaked my interest enough, to
-                where I
-                took the time to learn ActionScript 3.
-            </p>
-            <p>
-                At this point, I had made my first project and thought to myself: Ruffle works tremendously, even for
-                very
-                complicated things, like proper video games or tools. Why not try it out? And so I did. The games you
-                can
-                play
-                on this website run on Ruffle, have been programmed using FlashDevelop, the AIR SDK and the Flex SDK. It
-                works
-                very well and, in my opinion, goes to show how useful this language can still be. Because while you
-                could
-                have
-                made these things in JavaScript, the ease of programming cannot be understated.
-            </p>
-            <p>
-                This is to say: If you want to try out something different and potentially want to find out whether
-                programming
-                in ActionScript really is as easy as I make it out, I urge you to try it out yourself. It’s free and
-                even if
-                you
-                don’t like it, you’ll have learned something along the way.
-            </p>
-
-            <br>
-            <div class="card">
-                <h2>
-                    Brick:
-                </h2>
-                <p>
-                    I have finished my second Flash game, called Brick. It is more or less a Breakout clone. It works
-                    very
-                    well,
-                    this time even on mobile devices! Using AIR, one could package this as an iOS and Android
-                    application,
-                    which
-                    I might try in the future.
-                    <br>
-                    Why not try it out? Use the link at the top of the web page to give it a shot! How far can you get?
-                    How
-                    many
-                    screens can you clear?
-                </p>
-                <br>
-                <p>
-                    Notes:
-                </p>
-                <p>
-                    I am aware, that the collision could use some work. Currently it only flips the vertical momentum.
-                    That
-                    works for most cases, but if the ball hits a brick from the side, it may clip into it. It could also
-                    clip
-                    into thing or even go through them, if the speed it too high, which is something I will get around
-                    to
-                    soon.
-
-                </p>
-            </div>
-            <br>
-            <div class="card">
-                <h2>
-                    Snake:
-                </h2>
-                <p>
-                    This technically isn’t my first Flash game, however, it is the first I am happy with. This is just a
-                    basic
-                    recreation of Snake. Given my current limitations, mostly FlashDevelop, I opted for simple graphics,
-                    but
-                    with a certain attitude. While FlashDevelop is a powerful tool, it doesn’t have built in support for
-                    creating graphics. This led me to using just blocks and shapes. Nevertheless, I still applied
-                    various
-                    techniques and filters to make it unique.
-                </p>
-                <p>
-                    Everything besides the background is drawn programmatically using sprites, shapes and other display
-                    objects.
-                    Try it out and see how many apples you can eat!
-                </p>
-                <br>
-                <p>
-                    Notes:
-                </p>
-                <p>
-                    While the game is almost glitch free, currently there is still one bug: The game originally ran too
-                    fast. To
-                    counteract this, I implemented a delay: It could only process the game loop every 2nd frame. This
-                    works
-                    well
-                    for slowing the game down from 30fps to 15fps, while keeping the menu and inputs smooth, however, it
-                    introduces a problem where you can run into yourself: Normally if you try to run into yourself, you
-                    can’t-
-                    say you’re going up and press down, nothing happens. Given that inputs are processed every frame
-                    though
-                    and
-                    movement only every second, it can happen that you press two buttons too quickly, because you’re
-                    basically
-                    doing it in-between frames.
-                </p>
-                <p>
-                    This happens because the block, that is preventing you from running into yourself via a button
-                    press, is
-                    tied to a variable that stores where the snake is going, not the input in relation to the snake’s
-                    position.
-                    This is something I intend to fix.
-
-                </p>
-            </div>
-            <br>
-            <hr>
-            <p>
-                Important:
-            </p>
-            <p>
-                While I do my best to create all assets myself, right now there are various sounds not created by me.
-                That
-                includes sounds from Portal (Valve) and Fractal Block World. No copyright infringement is intended. If
-                you
-                are
-                the rightful owner and want this content removed, please contact me. Do note, that currently, the
-                contact
-                page
-                is still under construction.
-            </p>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;"> <img src="assets/img/game-preview/brick800.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Classic time killer. How long can you survive? Features mouse / touch controls!</p>
+            <a href="subpages/games/brick.html" class="btn btn-danger">Plop!</a> </div>
         </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;"> <img src="assets/img/game-preview/space800.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Fast paced arcade classic with programmatically drawn sprites. Now with touch controls!</p>
+            <a href="#" class="btn btn-warning">Pew!</a> </div>
+        </div>
+      </div>
     </div>
-    <hr>
-
-    <footer>
-        <p>Copyright: DarkWingCat 2025</p>
-    </footer>
-
-    <script>
-
-        var nav = document.getElementsByClassName('navbox')[0];
-        var content = document.getElementById('content');
-
-        var navBoxClass = 'navbox';
-        var contentID = 'content';
-
-        if (localStorage.getItem('menuState') === 'in') {
-            nav.removeAttribute('class');
-            content.removeAttribute('id');
-        }
-        else {
-            nav.className = navBoxClass;
-            content.id = contentID;
-        }
-
-        function changeStyleIn() {
-
-
-            nav.removeAttribute('class');
-            content.removeAttribute('id');
-
-
-            localStorage.setItem('menuState', 'in');
-        }
-
-        function changeStyleOut() {
-            nav.className = navBoxClass;
-            content.id = contentID;
-
-            localStorage.setItem('menuState', 'out');
-        }
-
-    </script>
-
+  </div>
+</div>
 </body>
-
 </html>
